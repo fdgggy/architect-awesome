@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-13T06:07:05.160Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="-dgv3H6b3mtCL6jBDlj3" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-13T06:21:53.111Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="j-T1swUz9E7CfM7upiQ8" version="20.0.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1422" dy="1882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -241,6 +241,57 @@
         </mxCell>
         <mxCell id="c9j-OYmcgxdYEkMGAfNm-98" value="新逻辑" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680.5" y="-60" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-99" value="AI萧何举士政策流程图" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="-280" width="580" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-100" value="AI伍子胥建都政策流程图&lt;br&gt;使低级城市较快提升到高级城市，获取最大收益" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="1169" width="580" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=block;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c9j-OYmcgxdYEkMGAfNm-101" target="c9j-OYmcgxdYEkMGAfNm-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-101" value="招募到伍子胥实施建都政策" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="414" y="1310" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=block;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c9j-OYmcgxdYEkMGAfNm-103">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="544" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-103" value="拥有n个等级x的非首都城市" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="436" y="1470" width="216" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-106" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;x=建都政策限制等级-建都加成等级-国家首都加成等级&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;建都政策限制等级：PolicyConfig中ChangeCapitalMaxLevel&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;建都加成等级:PolicyConfig中ChangeCapitalLevelUpNum&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;国家首都加成等级:CountryConfig中CapitalLevelBuff&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="810" y="1440" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=block;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c9j-OYmcgxdYEkMGAfNm-107">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-107" value="选择人口最少的城市，人口相同则随机" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="442" y="1600" width="216" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=block;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c9j-OYmcgxdYEkMGAfNm-109" target="c9j-OYmcgxdYEkMGAfNm-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-109" value="迁都逻辑" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="442" y="1730" width="216" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=block;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c9j-OYmcgxdYEkMGAfNm-110" target="c9j-OYmcgxdYEkMGAfNm-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="1878" />
+              <mxPoint x="720" y="1498" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-110" value="进入CD, 暂定900s" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="442" y="1850" width="216" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c9j-OYmcgxdYEkMGAfNm-113" value="CD完了后如果还有满足条件的城市，再次迁都，直到次数用完" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="1680" width="360" height="41" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
