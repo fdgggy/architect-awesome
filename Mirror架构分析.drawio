@@ -22,6 +22,38 @@
         <mxCell id="eoro2AQ4aJLVT_-DZN7c-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;div style=&quot;background-color:#262626;color:#d0d0d0&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;/*&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt; * generates code like:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    public void RpcTest (int param)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;        NetworkWriter writer = new NetworkWriter ();&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;        writer.WritePackedUInt32((uint)param);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;        base.SendRPCInternal(typeof(class),&quot;RpcTest&quot;, writer, 0);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    }&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    public void CallRpcTest (int param)&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;        // whatever the user did before&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    }&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    Originally HLAPI put the send message code inside the Call function&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    and then proceeded to replace every call to RpcTest with CallRpcTest&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    This method moves all the user&#39;s code into the &quot;CallRpc&quot; method&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    and replaces the body of the original method with the send message code.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    This way we do not need to modify the code anywhere else,  and this works&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;    correctly in dependent assemblies&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(133, 196, 108);&quot;&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="480" width="620" height="370" as="geometry" />
         </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-9" value="transform 同步" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="840" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eoro2AQ4aJLVT_-DZN7c-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-10" value="NetworkTransformBase" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="910" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eoro2AQ4aJLVT_-DZN7c-12" target="eoro2AQ4aJLVT_-DZN7c-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-12" value="Update" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eoro2AQ4aJLVT_-DZN7c-15" target="eoro2AQ4aJLVT_-DZN7c-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-15" value="&lt;div style=&quot;background-color:#262626;color:#d0d0d0&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;CmdClientToServerSync&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="910" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-17" value="一定频率100ms，状态改变时" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="880" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-19" value="设置这个transform的基础信息，同时置为Dirty，在下次ServerUpdate时广播给其他人" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="892.5" width="210" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="eoro2AQ4aJLVT_-DZN7c-21" value="上面的改代码成发送消息发送到server的这个函数" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="880" width="140" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
